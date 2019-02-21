@@ -9,14 +9,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #617191;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(82, 27, 27);
 }
 
 .App-link {
@@ -30,4 +30,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+.raheem{ 
+  padding: 10px;
+  display: inline-block;
+  width: 310px;
+  height: 310px;
+  background-color: aqua;
+  border: 2px solid rgb(2, 2, 2);
+  box-shadow: 0px 8px 8px 8px blue;
+  border-radius: 20px;
+  margin: 20px;
+}
+img{
+  width: 310px;
+  height: 310px;
+}
+.whole{
+  margin: 10px;
 }

@@ -1,25 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
+  constructor(props)
+  {
+    super(props);
+    let firstName = this.props.name.split(' ')[0];
+    
+    this.state = {
+      name: firstName 
+    }
+  }
   render() {
     return (
-      <div className="App">
+      <div className="whole">
+       <div className="raheem">
+          <img src={require('./a.jpg')}  alt="happy"/>
+       </div>
+       <div className="raheem">
+          <img src={require('./a.jpg')}  alt="happy"/>
+       </div>
+       <div className="raheem">
+          <img src={require('./a.jpg')}  alt="happy"/>
+       </div>
+       <div className="raheem">
+          <img src={require('./a.jpg')}  alt="happy"/>
+       </div>
+       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
+          <p >
+            Edit  and save to {this.state.name}.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p >
+            Edit  and save to {this.props.name}.
+          </p>
         </header>
+       </div>
       </div>
     );
   }
